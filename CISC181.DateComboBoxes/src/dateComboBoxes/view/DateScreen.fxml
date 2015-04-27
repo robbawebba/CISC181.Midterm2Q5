@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="98.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dateComboBoxes.view.DateController">
+   <children>
+      <VBox alignment="CENTER" prefHeight="97.0" prefWidth="450.0">
+         <children>
+            <HBox prefHeight="39.0" prefWidth="450.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="39.0" prefWidth="148.0" text="Month:" textAlignment="CENTER">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="39.0" prefWidth="148.0" text="Day:" textAlignment="CENTER">
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="39.0" prefWidth="148.0" text="Year:" textAlignment="CENTER" />
+               </children>
+            </HBox>
+            <HBox prefHeight="39.0" prefWidth="450.0">
+               <children>
+                  <ComboBox fx:id="monthBox" onAction="#handleMonth" prefHeight="39.0" prefWidth="166.0">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </ComboBox>
+                  <ComboBox fx:id="dayBox" prefHeight="39.0" prefWidth="99.0">
+                     <HBox.margin>
+                        <Insets left="15.0" />
+                     </HBox.margin>
+                  </ComboBox>
+                  <ComboBox fx:id="yearBox" onAction="#handleYear" prefHeight="39.0" prefWidth="129.0">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </ComboBox>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
