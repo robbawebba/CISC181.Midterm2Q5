@@ -95,7 +95,9 @@ public class DateController {
 
 	@FXML
 	private void handleYear() {
-		daysFebruary();
+		if(monthBox.getValue().equals("February")) {
+			daysFebruary();
+		}
 	}
 
 	public void setMainApp(MainApp main) {
