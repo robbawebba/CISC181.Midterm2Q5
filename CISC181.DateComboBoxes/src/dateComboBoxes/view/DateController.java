@@ -50,8 +50,9 @@ public class DateController {
 	@FXML
 	public void initialize() {
 		monthBox.setItems(months);
+		yearBox.setItems(years);
 		monthBox.setValue(monthSwitch(1+now.get(Calendar.MONTH)));
-		yearBox.setItems(years);		
+		
 		yearBox.setValue(""+now.get(Calendar.YEAR)+"");
 		handleMonth();
 		handleYear();
